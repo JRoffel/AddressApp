@@ -3,18 +3,27 @@
 <?import javafx.scene.chart.BarChart?>
 <?import javafx.scene.chart.CategoryAxis?>
 <?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="450.0" prefWidth="620.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65">
+<AnchorPane prefHeight="450.0" prefWidth="620.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.BirthdayStatisticsController">
    <children>
-      <BarChart layoutX="69.0" layoutY="14.0" prefHeight="450.0" prefWidth="620.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <BarChart fx:id="barChart" layoutX="69.0" layoutY="14.0" prefHeight="450.0" prefWidth="620.0" styleClass="label-bright" stylesheets="@DarkTheme.css" title="Birthday graph" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <xAxis>
-          <CategoryAxis side="BOTTOM" />
+          <CategoryAxis side="BOTTOM" styleClass="label-bright" stylesheets="@DarkTheme.css" fx:id="xAxis">
+               <effect>
+                  <Glow />
+               </effect></CategoryAxis>
         </xAxis>
         <yAxis>
-          <NumberAxis side="LEFT" />
+          <NumberAxis side="LEFT" styleClass="label-bright">
+               <effect>
+                  <Glow />
+               </effect></NumberAxis>
         </yAxis>
+         <effect>
+            <Glow />
+         </effect>
       </BarChart>
    </children>
 </AnchorPane>
