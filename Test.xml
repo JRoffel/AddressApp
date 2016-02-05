@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persons>
+    <person>
+        <birthday>1997-10-13</birthday>
+        <city>Sliedrecht</city>
+        <firstName>Jason</firstName>
+        <lastName>Roffel</lastName>
+        <postalCode>3363</postalCode>
+        <street>Reinenweer 36</street>
+    </person>
+    <person>
+        <birthday>1231-05-10</birthday>
+        <city>Some City</city>
+        <firstName>Someone</firstName>
+        <lastName>SomeFamily</lastName>
+        <postalCode>1234</postalCode>
+        <street>Some Street</street>
+    </person>
+</persons>
